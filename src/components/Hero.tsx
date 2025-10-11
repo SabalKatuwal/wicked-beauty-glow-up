@@ -19,7 +19,7 @@ const Hero = () => {
           alt="Wicked Beauty Luxury Salon"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/90 to-secondary/80" />
+        <div className="absolute inset-0 bg-[hsl(var(--light-pink))]/60" />
       </div>
 
       {/* Decorative Elements */}

@@ -47,7 +47,7 @@ const Navigation = () => {
             className="flex items-center space-x-2 group"
           >
             <Sparkles className="h-6 w-6 text-primary group-hover:text-primary-glow transition-colors" />
-            <span className="font-serif text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="font-serif text-2xl font-bold text-[hsl(var(--dark-pink))]">
               Wicked Beauty
             </span>
           </button>

@@ -22,6 +22,12 @@ All colors MUST be HSL.
     --primary: 340 65% 65%;
     --primary-foreground: 0 0% 100%;
     --primary-glow: 340 85% 75%;
+    
+    /* Dark pink for logo */
+    --dark-pink: 330 75% 45%;
+    
+    /* Light pink overlay for hero */
+    --light-pink: 340 100% 95%;
 
     /* Champagne nude secondary */
     --secondary: 35 35% 88%;
