@@ -64,13 +64,13 @@ const Footer = () => {
                 <span>wickedbronze@hotmail.com</span>
               </a>
               <a
-                href="https://instagram.com/wannafeelpretty_"
+                href="https://www.instagram.com/wickedbronzebeauty/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 hover:text-primary transition-colors"
               >
                 <Instagram className="h-4 w-4" />
-                <span>@wannafeelpretty_</span>
+                <span>@wickedbronzebeauty</span>
               </a>
             </div>
           </div>

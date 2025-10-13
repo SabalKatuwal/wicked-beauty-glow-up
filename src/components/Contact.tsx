@@ -41,8 +41,8 @@ const Contact = () => {
     {
       icon: Instagram,
       label: "Instagram",
-      value: "@wannafeelpretty_",
-      link: "https://instagram.com/wannafeelpretty_",
+      value: "@wickedbronzebeauty",
+      link: "https://www.instagram.com/wickedbronzebeauty/",
     },
   ];
 

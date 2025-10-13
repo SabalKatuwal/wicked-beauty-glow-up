@@ -4,28 +4,28 @@ import { Star, Quote } from "lucide-react";
 const Reviews = () => {
   const reviews = [
     {
-      name: "Sarah M.",
+      name: "Sarah M. – Manly, NSW",
       rating: 5,
-      text: "Absolutely love my lash extensions! The technician was so skilled and made me feel completely comfortable. I wake up looking gorgeous every day!",
-      service: "Eyelash Extensions",
-    },
-    {
-      name: "Emma L.",
-      rating: 5,
-      text: "Best spray tan I've ever had! The color is so natural and it lasted for ages. The service was professional and the salon is beautiful.",
+      text: "The most natural tan I’ve ever had! Wicked Bronze gave me the perfect golden glow — no streaks, no orange tones, just flawless results. Sarah made me feel super comfortable and explained everything clearly. I’ve already had so many compliments!",
       service: "Spray Tan",
     },
     {
-      name: "Olivia K.",
+      name: "Emily R. – Dee Why",
       rating: 5,
-      text: "My brows have never looked better! The lamination gave them such a beautiful shape and they're so easy to maintain now. Highly recommend!",
-      service: "Brow Lamination",
+      text: "My go-to before every event! Every tan I’ve had here has been perfect. The colour looks natural, lasts for ages, and fades beautifully. The salon smells amazing and the girls are so friendly — I wouldn’t go anywhere else.",
+      service: "Spray Tan",
     },
     {
-      name: "Jessica R.",
+      name: "Chloe W. – Freshwater",
       rating: 5,
-      text: "The henna brows are incredible! They look so natural and defined. The whole experience at Wicked Beauty was luxurious and relaxing.",
-      service: "Henna Hybrid Brows",
+      text: "“Absolutely flawless result! I booked for my sister’s wedding and couldn’t be happier. The tan looked stunning in photos and gave me that fresh, healthy glow. Wicked Bronze truly knows how to make you feel confident.",
+      service: "",
+    },
+    {
+      name: "Jess T. – Narrabeen",
+      rating: 5,
+      text: "Such a confidence boost! From start to finish, the experience was amazing. The team were so welcoming and professional. My skin looked radiant, smooth, and perfectly bronzed — I’m obsessed!",
+      service: "Spray Tan",
     },
   ];
 
