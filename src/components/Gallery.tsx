@@ -1,20 +1,28 @@
 import { useState } from "react";
 import { Card } from "@/components/ui/card";
-import sprayTanImage from "@/assets/service-spray-tan.jpg";
-import lashesImage from "@/assets/service-lashes.jpg";
-import browsImage from "@/assets/service-brows.jpg";
-import hennaImage from "@/assets/service-henna.jpg";
+// import sprayTanImage from "@/assets/service-spray-tan.jpg";
+// import lashesImage from "@/assets/service-lashes.jpg";
+// import browsImage from "@/assets/service-brows.jpg";
+// import hennaImage from "@/assets/service-henna.jpg";
+
+import lashesImage from "@/assets/works-eyelashes.png";
+import henna1Image from "@/assets/works-henna1.jpg";
+import henna3Image from "@/assets/works-henna3.jpg.webp";
+import lamination1Image from "@/assets/works-lamination1.png";
+import lamination2Image from "@/assets/works-lamination2.jpeg";
+import eyelashImage from "@/assets/eyelash-extension.png";
+
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const galleryImages = [
+    { src: lamination1Image, alt: "Brow transformation", category: "Brows" },
     { src: lashesImage, alt: "Beautiful eyelash extensions", category: "Lashes" },
-    { src: sprayTanImage, alt: "Professional spray tan results", category: "Spray Tan" },
-    { src: browsImage, alt: "Perfect brow lamination", category: "Brows" },
-    { src: hennaImage, alt: "Henna hybrid brows", category: "Henna" },
-    { src: lashesImage, alt: "Volume lash extensions", category: "Lashes" },
-    { src: browsImage, alt: "Brow transformation", category: "Brows" },
+    { src: henna1Image, alt: "Henna hybrid browns", category: "Henna" },
+    { src: henna3Image, alt: "Perfect brow lamination", category: "Henna" },
+    { src: eyelashImage, alt: "Volume lash extensions", category: "Lashes" },
+    { src: lamination2Image, alt: "Henna hybrid brows", category: "Browns" },
   ];
 
   return (

@@ -1,9 +1,9 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Sparkles, Sun, Eye, Brush } from "lucide-react";
-import sprayTanImage from "@/assets/service-spray-tan.jpg";
-import lashesImage from "@/assets/service-lashes.jpg";
-import browsImage from "@/assets/service-brows.jpg";
-import hennaImage from "@/assets/service-henna.jpg";
+import sprayTanImage from "@/assets/spray-tans.png";
+import lashesImage from "@/assets/eyelash-extension.png";
+import browsImage from "@/assets/brown-lamination.png";
+import hennaImage from "@/assets/hybrid-browns.png";
 
 const Services = () => {
   const services = [

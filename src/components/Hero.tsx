@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles, Star } from "lucide-react";
-import heroImage from "@/assets/hero-beauty-salon.jpg";
+import heroImage from "@/assets/wicked-wallpaper.png";
+// import wickedVideo from "@/assets/wickedVideo.mov";
 
 const Hero = () => {
   const scrollToContact = () => {
@@ -13,6 +14,18 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
+      {/* <div className="absolute inset-0 z-0">
+        <video
+          src={wickedVideo}
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-[hsl(var(--light-pink))]/60" />
+      </div> */}
+
       <div className="absolute inset-0 z-0">
         <img
           src={heroImage}
