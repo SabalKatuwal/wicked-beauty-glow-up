@@ -12,7 +12,7 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image with Overlay */}
       {/* <div className="absolute inset-0 z-0">
         <video
@@ -30,9 +30,9 @@ const Hero = () => {
         <img
           src={heroImage}
           alt="Wicked Beauty Luxury Salon"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[hsl(var(--light-pink))]/60" />
+        <div className="absolute inset-0 bg-[hsl(var(--light-pink))]/50" />
       </div>
 
       {/* Decorative Elements */}
