@@ -32,7 +32,7 @@ const Hero = () => {
           alt="Wicked Beauty Luxury Salon"
           className="w-full h-full object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[hsl(var(--light-pink))]/50" />
+        <div className="absolute inset-0 bg-[hsl(var(--primary))]/60" />
       </div>
 
       {/* Decorative Elements */}
@@ -70,7 +70,7 @@ const Hero = () => {
             ].map((service) => (
               <span
                 key={service}
-                className="px-6 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white font-medium border border-white/30"
+                className="px-6 py-2 bg-white/30 backdrop-blur-sm rounded-full text-white font-semibold border border-white/40"
               >
                 {service}
               </span>
