@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 container mx-auto px-4 py-16">
+        <div className="relative z-10 container mx-auto px-4 py-16 pt-32">
           <div className="max-w-4xl mx-auto space-y-8 text-center">
             {/* Logo/Brand */}
             <div className="flex items-center justify-center space-x-3 animate-fadeIn">
