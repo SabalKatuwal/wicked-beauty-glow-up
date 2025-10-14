@@ -32,6 +32,20 @@ const Reviews = () => {
   return (
     <section id="reviews" className="py-20 bg-background">
       <div className="container mx-auto px-4">
+        <div className="text-center mb-12 p-8 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl max-w-4xl mx-auto animate-fadeIn">
+          <div className="flex items-center justify-center mb-4">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="h-6 w-6 text-accent fill-accent" />
+            ))}
+          </div>
+          <h3 className="font-serif text-3xl font-bold text-foreground mb-2">
+            5.0 Average Rating
+          </h3>
+          <p className="text-muted-foreground">
+            Based on 100+ happy clients
+          </p>
+        </div>
+
         <div className="text-center mb-16 animate-fadeIn">
           <h2 className="font-serif text-5xl md:text-6xl font-bold text-foreground mb-4">
             Client Love
@@ -73,20 +87,6 @@ const Reviews = () => {
               </CardContent>
             </Card>
           ))}
-        </div>
-
-        <div className="text-center mt-12 p-8 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-2xl max-w-4xl mx-auto animate-fadeIn">
-          <div className="flex items-center justify-center mb-4">
-            {[...Array(5)].map((_, i) => (
-              <Star key={i} className="h-6 w-6 text-accent fill-accent" />
-            ))}
-          </div>
-          <h3 className="font-serif text-3xl font-bold text-foreground mb-2">
-            5.0 Average Rating
-          </h3>
-          <p className="text-muted-foreground">
-            Based on 100+ happy clients
-          </p>
         </div>
       </div>
     </section>

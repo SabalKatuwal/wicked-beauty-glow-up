@@ -194,12 +194,10 @@ const Contact = () => {
                   <MapPin className="h-6 w-6 text-primary mr-2" />
                   Location
                 </h3>
-                <p className="text-muted-foreground mb-4">
-                  We're located in a beautiful, easily accessible area. Contact us for our exact address and directions.
-                </p>
-                <div className="bg-muted/50 rounded-lg p-6 text-center">
-                  <p className="text-sm text-muted-foreground mb-2">Service Area</p>
-                  <p className="font-semibold text-foreground">Australia Wide</p>
+                <div className="bg-muted/50 rounded-lg p-6">
+                  <p className="font-semibold text-foreground">
+                    Suite 4 Level 1/1 Redman Rd, Dee Why NSW 2099, Australia
+                  </p>
                 </div>
               </CardContent>
             </Card>

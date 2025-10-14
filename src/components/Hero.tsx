@@ -92,7 +92,7 @@ const Hero = () => {
             {/* Certification Badge */}
             <div className="pt-8">
               <p className="text-white text-sm font-medium tracking-wider">
-                CERTIFIED LASH TECHNICIAN × 3
+                CERTIFIED LASH TECHNICIAN
               </p>
             </div>
           </div>
