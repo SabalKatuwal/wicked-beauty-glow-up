@@ -12,30 +12,9 @@ const Hero = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex flex-col overflow-hidden">
-      {/* White Logo Section */}
-      <div className="relative z-10 bg-white py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center space-y-6 animate-fadeIn">
-            {/* Logo/Brand */}
-            <div className="flex items-center justify-center space-x-3">
-              <Sparkles className="h-10 w-10 text-accent" />
-              <h1 className="font-serif text-5xl md:text-7xl font-bold text-[hsl(var(--dark-pink))]">
-                Wicked Beauty
-              </h1>
-              <Sparkles className="h-10 w-10 text-accent" />
-            </div>
-
-            {/* Slogan */}
-            <p className="text-xl md:text-3xl font-serif text-foreground italic">
-              Where beauty dreams come true!
-            </p>
-          </div>
-        </div>
-      </div>
-
+    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image Section */}
-      <div className="relative flex-1 flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <img
@@ -57,6 +36,20 @@ const Hero = () => {
         {/* Content */}
         <div className="relative z-10 container mx-auto px-4 py-16">
           <div className="max-w-4xl mx-auto space-y-8 text-center">
+            {/* Logo/Brand */}
+            <div className="flex items-center justify-center space-x-3 animate-fadeIn">
+              <Sparkles className="h-10 w-10 text-white" />
+              <h1 className="font-serif text-5xl md:text-7xl font-bold text-white">
+                Wicked Beauty
+              </h1>
+              <Sparkles className="h-10 w-10 text-white" />
+            </div>
+
+            {/* Slogan */}
+            <p className="text-xl md:text-3xl font-serif text-white italic">
+              Where beauty dreams come true!
+            </p>
+
             {/* Services Badges */}
             <div className="flex flex-wrap justify-center gap-4 py-6">
               {[
