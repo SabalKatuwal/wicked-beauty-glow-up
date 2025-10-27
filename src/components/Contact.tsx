@@ -5,6 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, Instagram, MapPin, Calendar } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { supabase } from "@/integrations/supabase/client";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -16,13 +17,34 @@ const Contact = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Booking Request Received!",
-      description: "We'll contact you shortly to confirm your appointment.",
-    });
-    setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+    setIsSubmitting(true);
+
+    try {
+      const { error } = await supabase.functions.invoke("send-booking-email", {
+        body: formData,
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Booking Request Received!",
+        description: "We'll contact you shortly to confirm your appointment.",
+      });
+      setFormData({ name: "", email: "", phone: "", service: "", message: "" });
+    } catch (error) {
+      console.error("Error sending booking email:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send booking request. Please try again or contact us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -146,11 +168,12 @@ const Contact = () => {
 
                 <Button
                   type="submit"
+                  disabled={isSubmitting}
                   className="w-full bg-gradient-to-r from-primary to-primary-glow hover:shadow-glow transition-all"
                   size="lg"
                 >
                   <Calendar className="mr-2 h-5 w-5" />
-                  Request Booking
+                  {isSubmitting ? "Sending..." : "Request Booking"}
                 </Button>
               </form>
             </CardContent>
